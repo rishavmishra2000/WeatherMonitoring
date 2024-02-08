@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    background-color: #caf0f8;
+}
+
+:root {
+    --primary-color: #004336;
+    --secondary-color: #415a77;
+}
+
+.main-container {
+    border: 5px solid var(--primary-color);
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.flex-row {
+    display: flex;
+    font-weight: 700;
+    gap: 5px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.container {
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.title {
+    padding: 10px;
+    font-size: 1.3rem;    
+}
+
+.city-input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: var(--secondary-color);
+    background: none;
+    width: 300px;
+}
+
+button {
+    padding: 5px;
+    outline: var(--secondary-color);
+    background: var(--primary-color);
+    color: #eee;
+    border-radius: 5px;
+}
+
+.border {
+    margin-top: 10px;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 20px;
+}
+
+.temperature span {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+i {
+    margin: 10px auto;
+    font-size: 100px;
+}
+
+.wind div {
+    display: flex;
+}
+
+
+@media (max-width: 767px) {
+    * {
+        font-size: 1.1rem;
+    }
+    .main-container {
+        width: 95%;
+    }
+
+    .space-between {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .city-input {
+        width: 50vw;
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 1rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .space-between {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .city-input {
+        width: 50vw;
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 1rem;
+        padding: 0;
+    }
+}

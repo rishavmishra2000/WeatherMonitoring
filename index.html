@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="mini-navbar">
+            <div class="container">
+                <div>
+                    <h4 class="title">Weather Monitoring</h4>
+                </div>
+                <div>
+                    <input type="text" class="city-input" id="city-input" placeholder="Enter city name">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border">
+            <div class="border-bottom" style="display: flex; flex-direction: column; gap: 2px;">
+                <div class="flex-row">
+                    <div id="city-name">Location:</div>
+                    <div id="country"></div>
+                </div>
+                <div class="flex-row space-between">
+                    <div id="sun-rise">Sunrise: </div>
+                    <div id="sun-set">Sunset: </div>
+                </div>
+            </div>
+            <div class="border-bottom">
+                <h3 id="temperature">Weather:</h3>
+                <div class="temperature" style="margin-left: 50px;">
+                    <div>Current: <span id="current-temp"></span></div> 
+                    <div>Feel Like: <span id="feel-temp"></span></div>
+                    <div>Min: <span id="min-temp"></span></div>
+                    <div>Max: <span id="max-temp"></span></div>
+                    <div>Humidity: <span id="humidity"></span></div>
+                    <div>Visibility: <span id="visibility"></span></div>
+                </div>
+            </div>
+            <div class="border-bottom">
+                <div class="wind">
+                    <h3 id="wind-header">Wind:</h3>
+                    <div>
+                        <i id="wind-director" class="wind-director fa-solid fa-arrow-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6bb35d50c1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
