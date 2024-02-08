@@ -12,7 +12,7 @@ window.addEventListener('load', async () => {
     };
 
     const errorCallback = (error) => {
-        console.log(error.message);
+        alert(error.message);
     };
 
     await navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
