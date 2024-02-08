@@ -4,8 +4,8 @@ const URL = 'https://api.openweathermap.org/data/2.5/weather?'
 window.addEventListener('load', async () => {
 
     const successCallback = async (position) => {
-        const latitute = Math.round(position.coords.latitude).toFixed(2);
-        const longitude = Math.round(position.coords.longitude).toFixed(2);
+        const latitute = position.coords.latitude;
+        const longitude = position.coords.longitude;
         const location = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitute}&lon=${longitude}&appid=${API_KEY}`);
         const data = await location.json();
         bindData(data);
