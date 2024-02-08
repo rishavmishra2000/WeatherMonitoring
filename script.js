@@ -70,7 +70,7 @@ function bindData(data) {
     // Section - 3 (Wind Speed and direction)
     const windDirector = document.getElementById("wind-director");
     const windHeader = document.getElementById("wind-header");
-    console.log(data.wind.deg);
+    // console.log(data.wind.deg);
     windHeader.innerHTML = "Wind: " + data.wind.speed + 'Km/h';
     windDirector.style.transform = `rotate(${data.wind.deg}deg)`;
 }
